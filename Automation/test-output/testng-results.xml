@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="72872" started-at="2020-10-29T11:46:09Z" finished-at="2020-10-29T11:47:22Z">
+    <groups>
+    </groups>
+    <test name="Testing Operations" duration-ms="40755" started-at="2020-10-29T11:46:09Z" finished-at="2020-10-29T11:46:50Z">
+      <class name="com.practice.maven.Testing">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:com.practice.maven.Testing@7c24b813]" name="initializeDriver" is-config="true" duration-ms="35986" started-at="2020-10-29T17:16:09Z" finished-at="2020-10-29T17:16:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="ClosePopup()[pri:0, instance:com.practice.maven.Testing@7c24b813]" name="ClosePopup" duration-ms="2720" started-at="2020-10-29T17:16:46Z" finished-at="2020-10-29T17:16:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosePopup -->
+        <test-method status="PASS" signature="getInputForms()[pri:0, instance:com.practice.maven.Testing@7c24b813]" name="getInputForms" duration-ms="405" started-at="2020-10-29T17:16:48Z" depends-on-methods="com.practice.maven.Testing.ClosePopup" finished-at="2020-10-29T17:16:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInputForms -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.practice.maven.Testing@7c24b813]" name="CloseBrowser" is-config="true" duration-ms="1465" started-at="2020-10-29T17:16:49Z" finished-at="2020-10-29T17:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.practice.maven.Testing -->
+    </test> <!-- Testing Operations -->
+    <test name="Test to go to testing page" duration-ms="30516" started-at="2020-10-29T11:46:52Z" finished-at="2020-10-29T11:47:22Z">
+      <class name="com.practice.maven.LandingPage">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:com.practice.maven.LandingPage@729d991e]" name="initializeDriver" is-config="true" duration-ms="15734" started-at="2020-10-29T17:16:52Z" finished-at="2020-10-29T17:17:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="navigateToTestPage()[pri:0, instance:com.practice.maven.LandingPage@729d991e]" name="navigateToTestPage" duration-ms="13717" started-at="2020-10-29T17:17:08Z" finished-at="2020-10-29T17:17:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToTestPage -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.practice.maven.LandingPage@729d991e]" name="CloseBrowser" is-config="true" duration-ms="1062" started-at="2020-10-29T17:17:21Z" finished-at="2020-10-29T17:17:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.practice.maven.LandingPage -->
+    </test> <!-- Test to go to testing page -->
+  </suite> <!-- Suite -->
+</testng-results>
