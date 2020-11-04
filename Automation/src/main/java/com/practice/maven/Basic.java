@@ -17,9 +17,9 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Basic {
-	WebDriver cd;
+	public WebDriver cd;
 	Properties props;
-	WebDriverWait wait;
+	protected WebDriverWait wait;
 	public WebDriver DriverInitialization() throws IOException {
 		props=new Properties();
 		FileInputStream f=new FileInputStream("C:\\Users\\CHETAN\\git\\MavenAppRemoteRepo\\Automation\\src\\main\\java\\data.properties");

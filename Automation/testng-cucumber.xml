@@ -5,15 +5,9 @@
 <listener class-name="com.practice.maven.Listener"></listener>
 </listeners>
   
-    <test thread-count="5" name="Testing Operations">
+    <test name="Navigate to test page">
     <classes>
-      <class name="com.practice.maven.Testing"/>
+      <class name="cucumberMain.TestRunner"/>
       </classes>
-      </test>
-      <test name="Test to go to testing page">
-      <classes>
-      <class name="com.practice.maven.LandingPage"/>
-    </classes>  
   </test> <!-- Test -->
-  
 </suite> <!-- Suite -->

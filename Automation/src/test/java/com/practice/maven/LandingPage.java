@@ -35,8 +35,8 @@ public class LandingPage extends Basic {
 		log.info("Clicked on Demo button");
 		TestPage tp = new TestPage(cd);
 		wait = new WebDriverWait(cd, 5);
-		if(tp.closepopup().isDisplayed()) {
-			tp.closepopup().click();
+		if(tp.closepopupsize()>0) {
+			tp.getClosePopupButton().click();
 			log.info("Default pop up closed");
 			}
 			else

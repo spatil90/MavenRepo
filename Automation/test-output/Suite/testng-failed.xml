@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" parallel="tests">
-  <test name="Testing Operations(failed)" parallel="tests">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.practice.maven.Listener"/>
+  </listeners>
+  <test name="Testing Operations(failed)">
     <classes>
       <class name="com.practice.maven.LandingPage">
         <methods>
@@ -12,27 +15,11 @@
       <class name="com.practice.maven.Testing">
         <methods>
           <include name="initializeDriver"/>
+          <include name="getInputForms"/>
           <include name="ClosePopup"/>
           <include name="CloseBrowser"/>
         </methods>
       </class> <!-- com.practice.maven.Testing -->
     </classes>
   </test> <!-- Testing Operations(failed) -->
-  <test name="Test to go to testing page(failed)" parallel="tests">
-    <classes>
-      <class name="com.practice.maven.LandingPage">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="navigateToTestPage"/>
-          <include name="initializeDriver"/>
-        </methods>
-      </class> <!-- com.practice.maven.LandingPage -->
-      <class name="com.practice.maven.Testing">
-        <methods>
-          <include name="initializeDriver"/>
-          <include name="CloseBrowser"/>
-        </methods>
-      </class> <!-- com.practice.maven.Testing -->
-    </classes>
-  </test> <!-- Test to go to testing page(failed) -->
 </suite> <!-- Failed suite [Suite] -->

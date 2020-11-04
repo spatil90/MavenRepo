@@ -30,8 +30,8 @@ public class Testing extends Basic{
 		wait = new WebDriverWait(cd, 5);
 		//wait.until(ExpectedConditions.visibilityOf(tp.closepopup()));
 		
-		if(tp.closepopup().isDisplayed()) {
-		tp.closepopup().click();
+		if(tp.closepopupsize()>0) {
+		tp.getClosePopupButton().click();
 		log.info("Default pop up closed");
 		}
 		else

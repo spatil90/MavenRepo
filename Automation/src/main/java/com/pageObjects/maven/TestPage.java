@@ -1,5 +1,7 @@
 package com.pageObjects.maven;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +15,11 @@ public class TestPage {
 		this.cd=cd;
 	}
 	
-	public WebElement closepopup() {
+	public int closepopupsize() {
+		return cd.findElements(closepopupbutton).size();
+	}
+	
+	public WebElement getClosePopupButton() {
 		return cd.findElement(closepopupbutton);
 	}
 	
